@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Person
+public class Person
 {
     private String firstName, familyName;
     public Person(String firstName, String familyName)
@@ -25,13 +25,6 @@ public abstract class Person
     {
         this.familyName = familyName;
     }
-
-
-
-
-
-
-
     public boolean equals(Person person)
     {
         if(this.firstName.equals(person.getFirstName()) && this.familyName.equals(person.getFamilyName()))
