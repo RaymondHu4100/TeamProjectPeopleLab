@@ -1,6 +1,6 @@
 package com.company;
 
-public class Teacher extends Person
+public abstract class Teacher extends Person
 {
     private String Subject, Title;
     public Teacher (Subject, Title)
@@ -15,7 +15,16 @@ public class Teacher extends Person
         return Subject;
     }
 
-    public void setSubject(String subject) {
-        Subject = subject;
+    public void setSubject(String subject)
+    {
+        this.Subject = subject;
+    }
+    public  String getTitle()
+    {
+        return Title;
+    }
+    public void setTitle(String title)
+    {
+        this.Title = title;
     }
 }
