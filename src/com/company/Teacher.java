@@ -6,11 +6,14 @@ public class Teacher extends Person
     private String Title;
     public Teacher (Subject, Title)
     {
-        super();
+        super(firstName, lastName);
         this.Subject = Subject;
         this.Title = Title;
     }
-    public abstract String toString();
+    public String toString();
+    {
+        String Output =
+    }
     public String getSubject() {
         return Subject;
     }
