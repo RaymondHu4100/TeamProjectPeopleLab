@@ -6,15 +6,9 @@ public class Teacher extends Person
     private String Title;
     public Teacher ( String Subject,String Title)
     {
-        super("firstName","fhhdhfhdh");
+        super("","");
         this.Subject = Subject;
         this.Title = Title;
-    }
-    public String toString()
-    {
-        String Name1 = Title;
-        String Name2 = getFamilyName();
-        return Name1+". "+Name2;
     }
     public String getSubject()
     {
@@ -34,6 +28,10 @@ public class Teacher extends Person
     public void setTitle(String title)
     {
         Title = title;
+    }
+    public String toString()
+    {
+       return this.Title +" "+ this.getFamilyName();
     }
 }
 
